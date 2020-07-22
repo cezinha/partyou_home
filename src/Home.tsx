@@ -334,9 +334,9 @@ function Section5() {
       <Row>
         <Col className="text-center">
           <ul className="carosel-nav">
-            <li className="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+            <li className="active"><a href="/#1">1</a></li>
+            <li><a href="/#2">2</a></li>
+            <li><a href="/#3">3</a></li>
           </ul>
         </Col>
       </Row>
