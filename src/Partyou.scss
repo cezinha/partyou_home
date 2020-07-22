@@ -1,0 +1,121 @@
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+$partyou-blue: #29B6F6;
+$partyou-darkblue: #27C2FF;
+$partyou-lightblue: #00DCFF;
+$partyou-darkblack: #020202;
+$partyou-black: #252525;
+$partyou-darkgrey: #8E8E8E;
+$partyou-grey: #737373;
+$partyou-lightgrey: #b9b9b9;
+$font-family-sans-serif: 'Jost', sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  color: $partyou-black;
+}
+a {
+  color: $partyou-blue;
+}
+
+.bg-light { background-color: white !important;}
+
+.btn-primary {
+  background-color: $partyou-blue;
+  background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+  border-color: transparent;
+}
+
+.btn-secondary {
+  background-color: white;
+  border-color: white;
+  color: $partyou-black;
+  box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  border-color: $partyou-lightblue;
+  box-shadow: 0 0 0 0.15rem rgba(0,220,255, 0.2)
+}
+
+.btn-primary:hover {
+  border-color: $partyou-lightblue;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  border-color: $partyou-blue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $partyou-darkblack;
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 1.1rem 2.3em;
+  font-weight: 600;
+  font-size: 1.13rem;
+}
+
+.App-logo {
+  height: 45px;
+  pointer-events: none;
+  margin-right: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 0 50px;
+}
+
+.link-login {
+  margin-right: 59px;
+  color: $partyou-blue;
+  font-size: 1.13rem;
+  font-weight: 500;
+  &:hover {
+    color: $partyou-lightblue;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  padding: 1.5rem 3rem 1rem !important;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.3rem 1rem !important
+  }
+
+  .navbar-light .navbar-nav {
+    margin-bottom: 1rem;
+
+    .nav-link {
+      border-bottom: 1px solid rgba(127, 127,127, 0.1);
+      text-align: center;
+    }
+  }
+  .link-login {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  .btn-primary {
+    text-align: center;
+    margin: 20px 0 0;
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+  }
+  .navbar-collapse {
+    padding: 30px;
+    background-color: #fafafa;
+  }
+}

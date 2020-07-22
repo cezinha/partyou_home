@@ -1,0 +1,554 @@
+@import "Partyou";
+
+#section-1 {
+  h1 {
+    margin-top: 110px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $partyou-darkblack;
+  }
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $partyou-darkgrey;
+    margin: 27px 0 30px;
+  }
+  p.policy {
+    margin-top: 4px;
+  }
+  img.celular {
+    margin-top: 90px;
+  }
+  .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn {
+    padding: 0.9rem 3.5rem;
+  }
+  .input-group-lg > .form-control:not(textarea), .input-group-lg > .custom-select {
+    height: calc(1.5em + 1.6rem + 2px);
+  }
+  .input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+    border-radius: 0.3rem;
+    margin-right: 12px;
+  }
+  .testimonials {
+    margin-top: 30px;
+    color: $partyou-darkgrey;
+    font-weight: 500;
+
+    &::before {
+      content: '';
+      border-bottom: 1px solid #c0c0c0;
+      width: 100px;
+      height: 1px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    img {
+      border-radius: 30px;
+      margin-right: 20px;
+      float: left;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    strong {
+      color: $partyou-darkblack;
+      font-weight: 500;
+    }
+  }
+}
+
+#section-2 {
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 70px 0;
+  }
+
+  img {
+    float: left;
+  }
+  h3 {
+    margin: 0.6rem 0 0.6rem 64px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  p {
+    margin-left: 64px;
+    font-size: 1.1rem;
+  }
+  .spacer{
+    height: 79px;
+  }
+  .btn-funcionalidades { 
+    margin-top: 110px;
+    margin-bottom: 140px;
+  }
+}
+
+.bg {
+  background-color: #f4f4f4;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: white;
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+  }
+}
+
+#section-3 {
+  .gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: $partyou-blue;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
+  h5 {
+    color: $partyou-lightgrey;
+    margin-left: 40px;
+  }
+  h2 {
+    text-align: center;
+    padding: 1.5rem 20%;
+    font-size: 2.5rem;
+  }
+  .text-center {
+    margin: 45px 0 65px;
+  }
+
+  ul.option {
+    margin: 70px auto;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 6px 27px;
+      padding: 9px 30px;
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: #858585;
+
+      &.title {
+        color: #434343 !important;
+        font-size: 1.2rem !important;
+        font-weight: 600;
+      }
+      &.active {
+        font-weight: 700 !important;
+        color: #29B6F6 !important;
+        background: white;
+        border-radius: 6px;
+        box-shadow: 0 4px 58px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .box {
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    margin: 0 auto;
+    width: 1070px;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 4px 58px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 162px;
+
+    .container {
+      padding: 0 70px 65px;
+    }
+
+    h3 {
+      font-size: 1.45rem;
+      color: $partyou-lightgrey;
+    }
+  }
+}
+
+#section-4 {
+  h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+  }
+  ul {
+    margin: 0 auto 139px;
+    width: 100%;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 15px 20px;
+      margin: 0 40px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+#section-5 {
+  padding: 140px 0;
+
+  .logo {
+    position: relative;
+    width: 325px;
+    height: 325px;
+
+    .bg-logo {
+      display: block;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background-color: #5129F6;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  blockquote {
+    padding: 3rem 2.5rem;
+    position: relative;
+
+    &::before{
+      content: '“';
+      font-family: Helvetica, sans-serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  p {
+      font-size: 1.75rem;
+      color: $partyou-darkblack;
+      margin-bottom: 5.2rem;
+    }
+  }
+  .blockquote-footer{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: $partyou-darkgrey;
+    strong {
+      color: $partyou-darkblack;
+    }
+    &::before {
+      content: '';
+    }
+  }
+  ul.carosel-nav {
+    list-style: none;
+    display: inline-block;
+
+    li {
+      background-color: #E1E1E1;
+      font-size: 0px;
+      height: 9px;
+      width: 9px;
+      border-radius: 5px;
+      color: transparent;
+      display: inline-block;
+      margin: 0 5px;
+
+      &.active {
+        background-color: $partyou-blue;
+      }
+    }
+  }
+}
+
+#section-6 {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 96px 0;
+
+  h1 {
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $partyou-darkgrey;
+    margin: 1.5rem 0;
+  }
+
+  #foto_app {
+    margin: 67px 0 77px;
+  }
+}
+
+@media (max-width: 992px) {
+  #section-1 {
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+    img.celular {
+      width: 90%;
+    }
+    .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn {
+      padding: 0.9rem 1.5rem;
+    }
+    .input-group > .form-control:not(:last-child), #section-1 .input-group > .custom-select:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  #section-2 {
+    h2 {
+      font-size: 1.8rem;
+      margin: 30px 0;
+    }
+    .spacer {
+      height: 0;
+    }
+    .btn-funcionalidades {
+      margin: 20px 0 60px;
+    }
+  }
+  .bg::before {
+    height: 43%;
+  }
+
+  #section-3 {
+    padding-top: 20px;
+
+    h1 {
+      margin-top: 1.5rem;
+      font-size: 3.5rem;
+    }
+    h2 {
+      padding: 1rem 0.5rem;
+      font-size: 2rem;
+    }
+    .text-center {
+      margin: 2rem 0 0;
+    }
+    .box {
+      width: 100%;
+      margin-top: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+    ul.option {
+      margin: 1rem auto;
+      padding: 0;
+
+      li {
+        display: block;
+      }
+    }
+  }
+
+  #section-4 {
+    h4 {
+      margin-bottom: 3rem;
+    }
+    ul li {
+      padding: 0;
+      margin: 0 0 20px;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  #section-5 {
+    padding: 50px 40px;
+
+    .logo {
+      width: 275px;
+      height: 275px;
+      margin-left: 35px;
+      .bg-logo {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    blockquote p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#call-to-action {
+  background-color: #f4f4f4;
+  padding: 140px 0;
+
+  h1 {
+    font-weight: 600;
+    margin-top: 4rem;
+  }
+  p {
+    font-size: 1.15rem;
+    margin-top: 1.25rem;
+  }
+
+  ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 4px 58px 0px rgba(127, 127, 127, 0.2);
+    border-radius: 8px;
+
+    li {
+      border: 1px solid #E5E5E5;
+      border-bottom-width: 0;
+      padding: 30px 50px 20px;
+
+      img {
+        float: left;
+        margin-top: 25px;
+      }
+
+      h6 {
+        margin: 0 0 0.2rem 72px;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-left: 72px;
+      }
+
+      &:last-child {
+        border-bottom-width: 1px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #call-to-action {
+    padding: 50px 0;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+}
+
+#footer {
+  padding: 77px 0 63px;
+
+  h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  h6 {
+    margin-bottom: 27px;
+  }
+
+  a {
+    color: $partyou-grey;
+    font-size: 1.13rem;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
+    height: calc(1.5em + 1.6rem + 2px);
+    border-right-width: 0;
+  }
+  .btn-lg, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn {
+    padding: 0.9rem 3.5rem;
+  }
+
+  ul.redes {
+    list-style: none;
+    float: right;
+    li {
+      display: inline-block;
+      a {
+        width: 20px;
+        height: 21px;
+        overflow: hidden;
+        display: block;
+        background-repeat: no-repeat;
+        color: transparent;
+        background-position: top left;
+      }
+      &.facebook a {
+        background-position: top right;
+      }
+    }
+  }
+
+  .footer-last {
+    margin-top: 88px;
+    img { height: 40px; }
+    a {
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (max-width: 992px) { 
+  #footer {
+    padding: 77px 20px 63px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+    h6 {
+      margin-top: 30px;
+    }
+
+    .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
+      border-right-width: 1px;
+      border-radius: 0.3rem;
+    }
+
+    .footer-last {
+      margin-top: 50px;
+      .text-center {
+        text-align: right !important;
+      }
+      .text-right {
+        text-align: center !important;
+        margin-top: 30px;
+      }
+    }
+  }
+}
