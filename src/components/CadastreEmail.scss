@@ -1,0 +1,35 @@
+@import '../Partyou';
+
+#cadastre-email {
+  padding-bottom: 148px;
+
+  h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  h6 {
+    text-align: center;
+    color: $partyou-mediumgrey;
+    margin: 22px 0 25px;
+  }
+  .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
+    height: calc(1.5em + 1.6rem + 2px);
+    border-right-width: 0;
+  }
+  .btn-lg, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn {
+    padding: 0.9rem 3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #cadastre-email {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
+      border-right-width: 1px;
+      border-radius: 0.3rem;
+    }
+  }
+}

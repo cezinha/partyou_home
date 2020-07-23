@@ -1,0 +1,99 @@
+@import '../Partyou';
+
+#carousel-section {
+  padding: 140px 0;
+
+  .logo {
+    position: relative;
+    width: 325px;
+    height: 325px;
+
+    .bg-logo {
+      display: block;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background-color: #5129F6;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  blockquote {
+    padding: 3rem 2.5rem;
+    position: relative;
+
+    &::before{
+      content: '“';
+      font-family: Helvetica, sans-serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  p {
+      font-size: 1.9rem;
+      color: $partyou-darkblack;
+      margin-bottom: 5.2rem;
+    }
+  }
+  .blockquote-footer{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: $partyou-darkgrey;
+    strong {
+      color: $partyou-darkblack;
+    }
+    &::before {
+      content: '';
+    }
+  }
+  .carousel-indicators {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    bottom: -60px;
+
+    li {
+      background-color: #E1E1E1;
+      font-size: 0px;
+      height: 9px;
+      width: 9px;
+      border-radius: 5px;
+      color: transparent;
+      display: inline-block;
+      margin: 0 5px;
+      border: none;
+
+      &.active {
+        background-color: $partyou-blue;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #carousel-section {
+    padding: 50px 40px;
+
+    .logo {
+      width: 275px;
+      height: 275px;
+      margin-left: 35px;
+      .bg-logo {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    blockquote p {
+      margin-bottom: 20px;
+      font-size: 1.25rem;
+    }
+  }
+}

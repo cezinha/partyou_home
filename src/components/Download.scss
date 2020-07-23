@@ -1,0 +1,28 @@
+@import "../Partyou";
+
+#download {
+  background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+
+  .container {
+    padding: 85px 0 0;
+  }
+
+  h1 {
+    font-weight: 600;
+    color: white;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $partyou-darkgrey;
+    margin: 1.5rem 0 50px;
+    color: white;
+  }
+
+  a {
+    margin: 0 5px;
+  }
+  #foto_app {
+    margin: 67px 0 0;
+  }
+}

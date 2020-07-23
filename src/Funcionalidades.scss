@@ -1,0 +1,127 @@
+@import "Partyou";
+
+.page.funcionalidades {
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+}
+.bg {
+  background-color: #f9f9f9;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: white;
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+  }
+}
+
+#section-1 {
+  padding-bottom: 52px;
+
+  h1 {
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-top: 100px;
+  }
+  h5 {
+    text-align: center;
+    color: $partyou-darkgrey;
+    font-size: 1.25rem;
+    margin: 30px 33%;
+  }
+
+  .btn {
+    margin: 10px 0 60px;
+  }
+}
+
+#section-2 {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0 100px;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 80px 0 40px;
+  }
+  .item {
+    p {
+      font-size: 1.3rem;
+      margin: 0 0 60px;
+    }
+  }
+  h5 {
+    margin: 20px 0;
+    font-weight: 600;
+  }
+  .subitem {
+    p {
+      font-size: 1.1rem;
+      padding-right: 80px;
+    }
+  }
+
+  .col > .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 160px;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  #section-1 {
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5rem;
+    }
+    h5 {
+      margin: 20px 10%;
+    }
+    .btn {
+      margin: 10px 0 20px;
+    }
+  }
+
+  #section-2 {
+    > .row {
+      border-bottom: 1px solid #f4f4f4;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 0 0 20px;
+    }
+    h3 {
+      font-size: 1.6rem;
+      margin: 1rem 0;
+    }
+    .item {
+      p {
+        margin: 0 0 1.5rem;
+      }
+    }
+    .subitem {
+      p {
+        padding-right: 0;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+  }
+}

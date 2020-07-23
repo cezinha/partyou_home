@@ -8,6 +8,7 @@ $partyou-darkblue: #27C2FF;
 $partyou-lightblue: #00DCFF;
 $partyou-darkblack: #020202;
 $partyou-black: #252525;
+$partyou-mediumgrey: #434343;
 $partyou-darkgrey: #8E8E8E;
 $partyou-grey: #737373;
 $partyou-lightgrey: #b9b9b9;
@@ -70,6 +71,40 @@ a {
 
 .navbar-light .navbar-nav .nav-link {
   margin: 0 50px;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 3px;
+    height: 3px;
+  }
+  &.active {
+    /* Fallback: Set a background color. */
+    background-color: $partyou-blue;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 3px;
+      height: 3px;
+      background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+      background-color: $partyou-blue;
+    }
+  }
 }
 
 .link-login {
@@ -80,6 +115,39 @@ a {
   &:hover {
     color: $partyou-lightblue;
     text-decoration: none;
+  }
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 3px;
+    height: 3px;
+  }
+  &.active {
+    /* Fallback: Set a background color. */
+    background-color: $partyou-blue;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 3px;
+      height: 3px;
+      background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+      background-color: $partyou-blue;
+    }
   }
 }
 

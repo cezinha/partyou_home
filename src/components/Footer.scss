@@ -1,0 +1,91 @@
+@import "../Partyou";
+
+#footer {
+  padding: 77px 0 63px;
+
+  h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  h6 {
+    margin-bottom: 27px;
+  }
+
+  a {
+    color: $partyou-grey;
+    font-size: 1.13rem;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
+    height: calc(1.5em + 1.6rem + 2px);
+    border-right-width: 0;
+  }
+  .btn-lg, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn {
+    padding: 0.9rem 3.5rem;
+  }
+
+  ul.redes {
+    list-style: none;
+    float: right;
+    li {
+      display: inline-block;
+      a {
+        width: 20px;
+        height: 21px;
+        overflow: hidden;
+        display: block;
+        background-repeat: no-repeat;
+        color: transparent;
+        background-position: top left;
+      }
+      &.facebook a {
+        background-position: top right;
+      }
+    }
+  }
+
+  .footer-last {
+    margin-top: 88px;
+    img { height: 40px; }
+    a {
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (max-width: 992px) { 
+  #footer {
+    padding: 77px 20px 63px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+    h6 {
+      margin-top: 30px;
+    }
+
+    .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
+      border-right-width: 1px;
+      border-radius: 0.3rem;
+    }
+
+    .footer-last {
+      margin-top: 50px;
+      .text-center {
+        text-align: right !important;
+      }
+      .text-right {
+        text-align: center !important;
+        margin-top: 30px;
+      }
+    }
+  }
+}

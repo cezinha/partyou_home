@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.scss';
-import { Container, Row, Col, InputGroup, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
-import { fmt } from './index';
+
 import celular from './assets/home_intro.png';
 import small_unesp from './assets/unesp.png';
 import ico_pagamento from './assets/ico_pagamento.png';
@@ -12,20 +12,15 @@ import ico_estoque from './assets/ico_estoque.png';
 import ico_celular from './assets/ico_celular.png';
 import ico_ingressos from './assets/ico_ingressos.png';
 import img_funciona from './assets/funciona.jpg';
-import logo from './assets/logo.png';
 import logo_desenvolvesp from './assets/logo_desenvolvesp.png';
 import logo_googlestartups from './assets/logo_googlestartups.png';
 import logo_kria from './assets/logo_kria.png';
 import logo_startupfarm from './assets/logo_startupfarm.png';
-import ico_temporeal from './assets/ico_temporeal.png';
-import ico_cartaocredito from './assets/ico_cartaocredito.png';
-import ico_retirada from './assets/ico_retirada.png';
-import foto_universitaria from './assets/foto_perfil.jpg';
-import logo_unesp from './assets/logo_unesp.png';
 import foto_app from './assets/foto_app.jpg';
 import btn_googleplay from './assets/btn_googleplay.png';
 import btn_applestore from './assets/btn_applestore.png';
-import ico_redes from './assets/ico_redes.png';
+import SectionCarousel from './components/Carousel';
+import SectionCallToAction from './components/CallToAction';
 
 class Home extends React.Component {
   render() {
@@ -35,10 +30,9 @@ class Home extends React.Component {
         <Section2 />
         <Section3 />
         <Section4 />
-        <BoxCallToAction />
+        <SectionCallToAction />
+        <SectionCarousel />
         <Section5 />
-        <Section6 />
-        <Footer />
       </div>
     );
   }
@@ -272,86 +266,14 @@ function Section4() {
   );
 }
 
-function BoxCallToAction() {
-  return (
-    <div id="call-to-action">
-      <Container>
-        <Row>
-          <Col sm={0} md={1}></Col>
-          <Col sm={12} md={4}>
-            <h1><FormattedMessage id="app.box.call.title" /></h1>
-            <p><FormattedMessage id="app.box.call.text" /></p>
-          </Col>
-          <Col sm={0} md={1}></Col>
-          <Col sm={12} md={5}>
-            <ul>
-              <li>
-                <img src={ico_temporeal} alt="ícone" />
-                <h6><FormattedMessage id="app.box.call.item1.title" /></h6>
-                <p><FormattedMessage id="app.box.call.item1.text" /></p>
-              </li>
-              <li>
-                <img src={ico_cartaocredito} alt="ícone" />
-                <h6><FormattedMessage id="app.box.call.item2.title" /></h6>
-                <p><FormattedMessage id="app.box.call.item2.text" /></p>
-              </li>
-              <li>
-                <img src={ico_retirada} alt="ícone" />
-                <h6><FormattedMessage id="app.box.call.item3.title" /></h6>
-                <p><FormattedMessage id="app.box.call.item3.text" /></p>
-              </li>
-            </ul>
-          </Col>
-          <Col sm={0} md={1}></Col>
-        </Row>
-      </Container>
-    </div>
-  )
-}
-
 function Section5() {
-  let style = {
-    backgroundImage: `url(${logo_unesp})`
-  };
   return (
-    <Container id="section-5">
-      <Row>
-        <Col md={1}></Col>
-        <Col md={4}>
-          <div className="logo">
-            <div className="bg-logo" style={style}></div>
-            <img src={foto_universitaria} alt="Foto da Helena Carvalho" />
-          </div>
-        </Col>
-        <Col md={7}>
-          <blockquote>
-            <p>Desde que comecei a usar Partyou, temos sido muito mais eficiente em nossas vendas
-            e organização da entidade.</p>
-            <footer className="blockquote-footer">Helena Carvalho, <strong>UNESP</strong></footer>
-          </blockquote>
-        </Col>
-      </Row>
-      <Row>
-        <Col className="text-center">
-          <ul className="carosel-nav">
-            <li className="active"><a href="/#1">1</a></li>
-            <li><a href="/#2">2</a></li>
-            <li><a href="/#3">3</a></li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
-  );
-}
-
-function Section6() {
-  return (
-    <div id="section-6">
+    <div id="section-5">
       <Container>
         <Row>
           <Col className="text-center">
-            <h1><FormattedMessage id="app.home.section6.title" /></h1>
-            <h4><FormattedMessage id="app.home.section6.subtitle" /></h4>
+            <h1><FormattedMessage id="app.home.section5.title" /></h1>
+            <h4><FormattedMessage id="app.home.section5.subtitle" /></h4>
             <p><img src={foto_app} alt="Foto App Partyou" id="foto_app" /></p>
             <p><a href="https://play.google.com">
               <img src={btn_googleplay} alt="Google Play" />
@@ -363,61 +285,5 @@ function Section6() {
         </Row>
       </Container>
     </div>
-  );
-}
-
-function Footer() {
-  return (
-    <Container id="footer">
-      <Row>
-        <Col sm={12} md={3}>
-          <h2>
-            <FormattedMessage id="app.footer.title" />
-          </h2>
-        </Col>
-        <Col sm={0} md={3}></Col>
-        <Col sm={12} md={2}><a href="/funcionalidades"><FormattedMessage id="app.footer.menu.item1" /></a></Col>
-        <Col sm={12} md={2}><a href="/sobre"><FormattedMessage id="app.footer.menu.item2" /></a></Col>
-        <Col sm={12} md={2}><a href="https://partyoublog.com/"><FormattedMessage id="app.footer.menu.item3" /></a></Col>
-      </Row>
-      <Row>
-        <Col sm={0} md={5}></Col>
-        <Col sm={12} md={3} className="text-center">
-          <h6><FormattedMessage id="app.footer.form.title" /></h6>
-        </Col>
-        <Col sm={12} md={4}>
-          <ul className="redes">
-            <li className="instagram"><a href="https://www.instagram.com/partyou.pay/" style={{backgroundImage: `url(${ico_redes})`}}>@partyou.pay</a></li>
-            <li className="facebook"><a href="https://www.facebook.com/partyou.pay/" style={{backgroundImage: `url(${ico_redes})`}}>fb.com/partyou.pay</a></li>
-          </ul>
-        </Col>
-      </Row>
-      <Row>
-        <Col sm={0} md={4}></Col>
-        <Col sm={12} md={5} className="text-center">
-          <form>
-            <InputGroup size="lg">
-              <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder={fmt({id: 'app.footer.form.label'})}/>
-              <Button variant="primary" size="lg">
-                <FormattedMessage id="app.footer.form.button" />
-              </Button>{' '}
-            </InputGroup>
-          </form>
-        </Col>
-      </Row>
-      <Row className="footer-last">
-        <Col xs={6} md={4}>
-          <DropdownButton id="dropdown-basic-button" variant="secondary" title="Idioma">
-            <Dropdown.Item href="#/action-1">Português</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Inglês</Dropdown.Item>
-          </DropdownButton>
-        </Col>
-        <Col xs={6} md={5} className="text-center"><a href="/"><img src={logo} alt="Partyou" /></a></Col>
-        <Col sm={12} md={3} className="text-right">
-          <a href="/privacidade"><FormattedMessage id="app.footer.link.privacy" /></a>
-          <a href="/termos"><FormattedMessage id="app.footer.link.terms" /></a>
-        </Col>
-      </Row>
-    </Container>
   );
 }
