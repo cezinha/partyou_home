@@ -13,11 +13,13 @@ import func_item4 from './assets/func_item4.jpg';
 import SectionCarousel from './components/Carousel';
 import SectionCadastreEmail from './components/CadastreEmail';
 import SectionDownload from './components/Download';
+import MainNavbar from './components/MainNavbar';
 
 class Funcionalidades extends React.Component {
   render() {
     return (
       <div>
+        <MainNavbar />
         <Section1 />
         <Section2 />
         <SectionCarousel />
@@ -37,7 +39,7 @@ function Section1() {
             <h1><FormattedMessage id="app.funcionalidades.section1.title" /></h1>
             <h5><FormattedMessage id="app.funcionalidades.section1.subtitle" /></h5>
             <div className="text-center">
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" onClick={() => window.location.href = '/login'}>
                 <FormattedMessage id="app.funcionalidades.section1.button" />
               </Button>{' '}
               <p><img src={celular} alt="App Partyou" /></p>

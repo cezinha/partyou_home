@@ -13,7 +13,7 @@ class SectionDownload extends React.Component {
         <Container>
           <Row>
             <Col className="text-center">
-              <h1><FormattedMessage id="app.home.section5.title" /></h1>
+              <h2><FormattedMessage id="app.home.section5.title" /></h2>
               <h4><FormattedMessage id="app.home.section5.subtitle" /></h4>
               <p><a href="https://play.google.com">
                 <img src={btn_googleplay} alt="Google Play" />

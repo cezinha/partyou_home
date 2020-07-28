@@ -37,18 +37,16 @@
       top: 0;
       left: 0;
     }
-  p {
-      font-size: 1.9rem;
-      color: $partyou-darkblack;
+    h5 {
       margin-bottom: 5.2rem;
     }
   }
   .blockquote-footer{
     font-weight: 500;
-    font-size: 1.25rem;
-    color: $partyou-darkgrey;
+    @extend .size-20;
+    @extend .partyou-lightgrey-2;
     strong {
-      color: $partyou-darkblack;
+      @extend .partyou-black;
     }
     &::before {
       content: '';
@@ -91,9 +89,8 @@
         height: 250px;
       }
     }
-    blockquote p {
+    blockquote h5 {
       margin-bottom: 20px;
-      font-size: 1.25rem;
     }
   }
 }

@@ -30,6 +30,8 @@ class SectionCarousel extends React.Component<{}, iState> {
         <Carousel activeIndex={this.state.index}
           onSelect={(idx) => this.handleSelect(idx)}
           indicators={true}
+          slide={true}
+          interval={4000}
           controls={true}>
           <Carousel.Item>
             <Container>
@@ -43,8 +45,8 @@ class SectionCarousel extends React.Component<{}, iState> {
                 </Col>
                 <Col md={7}>
                   <blockquote>
-                    <p>Desde que comecei a usar Partyou, temos sido muito mais eficiente em nossas vendas
-                    e organização da entidade.</p>
+                    <h5>Desde que comecei a usar Partyou, temos sido muito mais eficiente em nossas vendas
+                    e organização da entidade.</h5>
                     <footer className="blockquote-footer">Helena Carvalho, <strong>UNESP</strong></footer>
                   </blockquote>
                 </Col>
@@ -63,7 +65,7 @@ class SectionCarousel extends React.Component<{}, iState> {
                 </Col>
                 <Col md={7}>
                   <blockquote>
-                    <p>A Partyou trouxe um nível organizacional que a gente precisava. Conseguimos fazer parcelamentos e a taxa é baixa. Estão super disponíveis para ouvir a gente.</p>
+                    <h5>A Partyou trouxe um nível organizacional que a gente precisava. Conseguimos fazer parcelamentos e a taxa é baixa. Estão super disponíveis para ouvir a gente.</h5>
                     <footer className="blockquote-footer">Fernanda Alves, <strong>Diretora de Eventos - Atlética da Poli (USP)</strong></footer>
                   </blockquote>
                 </Col>

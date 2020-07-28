@@ -4,6 +4,16 @@
   .bg-light {
     background-color: #f9f9f9 !important;
   }
+  &::before {
+    content: '';
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 104px;
+    display: block;
+    width: 100%;
+  }
 }
 .bg {
   background-color: #f9f9f9;
@@ -25,15 +35,13 @@
 
   h1 {
     text-align: center;
-    font-size: 3.125rem;
-    font-weight: 700;
-    margin-top: 100px;
+    margin-top: 110px;
   }
   h5 {
+    @extend .size-22;
+    @extend .partyou-lightgrey-5;
     text-align: center;
-    color: $partyou-darkgrey;
-    font-size: 1.25rem;
-    margin: 30px 33%;
+    margin: 30px 30%;
   }
 
   .btn {
@@ -43,48 +51,42 @@
 
 #section-2 {
   h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
     text-align: center;
     margin: 50px 0 100px;
   }
 
   h3 {
-    font-size: 2.2rem;
-    font-weight: 600;
     margin: 80px 0 40px;
   }
   .item {
     p {
-      font-size: 1.3rem;
+      @extend .size-22;
       margin: 0 0 60px;
     }
   }
   h5 {
+    @extend .size-19;
+    @extend .bold;
     margin: 20px 0;
-    font-weight: 600;
   }
   .subitem {
     p {
-      font-size: 1.1rem;
-      padding-right: 80px;
+      @extend .size-17;
+      padding-right: 70px;
     }
   }
 
-  .col > .container-fluid {
+  .container-fluid {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 160px;
   }
 }
 
-
-
 @media (max-width: 992px) {
   #section-1 {
     h1 {
       margin-top: 30px;
-      font-size: 2.5rem;
     }
     h5 {
       margin: 20px 10%;
@@ -107,21 +109,37 @@
     h3 {
       font-size: 1.6rem;
       margin: 1rem 0;
+      text-align: center;
+    }
+    h5 {
+      text-align: center;
     }
     .item {
       p {
         margin: 0 0 1.5rem;
+        text-align: center;
+        padding: 0 5%;
       }
     }
     .subitem {
       p {
         padding-right: 0;
+        text-align: center;
+        padding: 0 15%;
       }
     }
 
     img {
       max-width: 100%;
       margin: 1rem 0;
+    }
+    .icon {
+      img {
+        margin: 0;
+      }
+    }
+    .container-fluid {
+      margin: 0;
     }
   }
 }

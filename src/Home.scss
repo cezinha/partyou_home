@@ -3,14 +3,9 @@
 #section-1 {
   h1 {
     margin-top: 110px;
-    font-size: 3rem;
-    font-weight: 700;
     color: $partyou-darkblack;
   }
-  h4 {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: $partyou-darkgrey;
+  p.size-22.partyou-lightgrey-5 {
     margin: 27px 0 30px;
   }
   p.policy {
@@ -31,8 +26,6 @@
   }
   .testimonials {
     margin-top: 30px;
-    color: $partyou-darkgrey;
-    font-weight: 500;
 
     &::before {
       content: '';
@@ -48,12 +41,15 @@
       float: left;
     }
     p {
-      font-size: 1.3rem;
-      font-weight: 400;
+      @extend .partyou-lightgrey-2;
+      @extend .size-22;
     }
     strong {
-      color: $partyou-darkblack;
       font-weight: 500;
+    }
+    span {
+      @extend .partyou-lightgrey-2;
+      @extend strong;
     }
   }
 }
@@ -61,8 +57,6 @@
 #section-2 {
   h2 {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
     margin: 70px 0;
   }
 
@@ -70,16 +64,16 @@
     float: left;
   }
   h3 {
+    @extend .bold;
+    @extend .size-19;
     margin: 0.6rem 0 0.6rem 64px;
-    font-weight: 600;
-    font-size: 1.2rem;
   }
   p {
     margin-left: 64px;
-    font-size: 1.1rem;
+    @extend .size-17;
   }
-  .spacer{
-    height: 79px;
+  .row {
+    margin-bottom: 79px;
   }
   .btn-funcionalidades { 
     margin-top: 110px;
@@ -103,36 +97,21 @@
 }
 
 #section-3 {
-  .gradient-text {
-    /* Fallback: Set a background color. */
-    background-color: $partyou-blue;
-
-    /* Create the gradient. */
-    background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
-
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
   h1 {
+    @extend .gradient-text;
     font-size: 3.8rem;
     font-weight: 600;
   }
-  h5 {
-    color: $partyou-lightgrey;
+  h6 {
+    @extend .partyou-lightgrey-6;
+  }
+  .box .container .row h6 {
     margin-left: 40px;
   }
   h2 {
     text-align: center;
     padding: 1.5rem 20%;
-    font-size: 2.5rem;
+    font-weight: 500;
   }
   .text-center {
     margin: 45px 0 65px;
@@ -146,21 +125,24 @@
       display: inline-block;
       margin: 6px 27px;
       padding: 9px 30px;
-      font-weight: 500;
-      font-size: 1.05rem;
-      color: #858585;
+      @extend .size-17;
+      @extend .partyou-lightgrey-4;
 
       &.title {
-        color: #434343 !important;
-        font-size: 1.2rem !important;
-        font-weight: 600;
+        @extend .partyou-darkgrey;
+        @extend .size-19;
+        @extend .bold;
       }
       &.active {
-        font-weight: 700 !important;
-        color: #29B6F6 !important;
+        @extend .bolder;
+        @extend .partyou-blue;
         background: white;
         border-radius: 6px;
         box-shadow: 0 4px 58px 0px rgba(0, 0, 0, 0.2);
+
+        span {
+          @extend .gradient-text;
+        }
       }
     }
   }
@@ -182,35 +164,7 @@
 
     h3 {
       font-size: 1.45rem;
-      color: $partyou-lightgrey;
-    }
-  }
-}
-
-#section-4 {
-  h4 {
-    text-align: center;
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-    font-size: 1.25rem;
-  }
-  ul {
-    margin: 0 auto 139px;
-    width: 100%;
-
-    li {
-      list-style: none;
-      display: inline-block;
-      padding: 0 15px 20px;
-      margin: 0 40px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
+      color: $partyou-lightgrey-1;
     }
   }
 }
@@ -220,18 +174,15 @@
   border-bottom: 1px solid #e5e5e5;
   padding: 96px 0;
 
-  h1 {
-    font-weight: 600;
-  }
   h4 {
-    font-size: 1.5rem;
+    @extend .size-22;
+    @extend .partyou-lightgrey-5;
     font-weight: 500;
-    color: $partyou-darkgrey;
     margin: 1.5rem 0;
   }
 
   #foto_app {
-    margin: 67px 0 77px;
+    margin: 67px 0;
   }
 }
 
@@ -239,9 +190,8 @@
   #section-1 {
     h1 {
       margin-top: 30px;
-      font-size: 2.5rem;
     }
-    h4 {
+    p.size-22.partyou-lightgrey-5 {
       font-size: 1.2rem;
     }
     img.celular {
@@ -256,11 +206,10 @@
   }
   #section-2 {
     h2 {
-      font-size: 1.8rem;
       margin: 30px 0;
     }
-    .spacer {
-      height: 0;
+    .row {
+      margin-bottom: 0;
     }
     .btn-funcionalidades {
       margin: 20px 0 60px;
@@ -298,18 +247,6 @@
       li {
         display: block;
       }
-    }
-  }
-
-  #section-4 {
-    h4 {
-      margin-bottom: 3rem;
-    }
-    ul li {
-      padding: 0;
-      margin: 0 0 20px;
-      text-align: center;
-      display: block;
     }
   }
 }

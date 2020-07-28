@@ -12,19 +12,21 @@ class Footer extends React.Component {
       <Container id="footer">
         <Row>
           <Col sm={12} md={3}>
-            <h2>
-              <FormattedMessage id="app.footer.title" />
-            </h2>
+            <h4><FormattedMessage id="app.footer.title" /></h4>
           </Col>
           <Col sm={0} md={3}></Col>
-          <Col sm={12} md={2}><a href="/funcionalidades"><FormattedMessage id="app.footer.menu.item1" /></a></Col>
-          <Col sm={12} md={2}><a href="/sobre"><FormattedMessage id="app.footer.menu.item2" /></a></Col>
-          <Col sm={12} md={2}><a href="https://partyoublog.com/"><FormattedMessage id="app.footer.menu.item3" /></a></Col>
+          <Col sm={12} md={6}>
+            <ul className="flex-container space-between">
+              <li className="flex-item"><a href="/funcionalidades"><FormattedMessage id="app.footer.menu.item1" /></a></li>
+              <li className="flex-item"><a href="/sobre"><FormattedMessage id="app.footer.menu.item2" /></a></li>
+              <li className="flex-item"><a href="https://partyoublog.com/"><FormattedMessage id="app.footer.menu.item3" /></a></li>
+            </ul>
+          </Col>
         </Row>
         <Row>
-          <Col sm={0} md={5}></Col>
-          <Col sm={12} md={3} className="text-center">
-            <h6><FormattedMessage id="app.footer.form.title" /></h6>
+          <Col sm={0} md={4}></Col>
+          <Col sm={12} md={4} className="text-center">
+            <p><strong><FormattedMessage id="app.footer.form.title" /></strong></p>
           </Col>
           <Col sm={12} md={4}>
             <ul className="redes">
@@ -35,7 +37,7 @@ class Footer extends React.Component {
         </Row>
         <Row>
           <Col sm={0} md={4}></Col>
-          <Col sm={12} md={5} className="text-center">
+          <Col sm={12} md={4} className="text-center">
             <form>
               <InputGroup size="lg">
                 <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder={fmt({id: 'app.footer.form.label'})}/>
@@ -53,10 +55,12 @@ class Footer extends React.Component {
               <Dropdown.Item href="#/action-2">Inglês</Dropdown.Item>
             </DropdownButton>
           </Col>
-          <Col xs={6} md={5} className="text-center"><a href="/"><img src={logo} alt="Partyou" /></a></Col>
-          <Col sm={12} md={3} className="text-right">
-            <a href="/privacidade"><FormattedMessage id="app.footer.link.privacy" /></a>
-            <a href="/termos"><FormattedMessage id="app.footer.link.terms" /></a>
+          <Col xs={6} md={4} className="text-center"><a href="/"><img src={logo} alt="Partyou" /></a></Col>
+          <Col sm={12} md={4}>
+            <ul className="flex-container space-between">
+              <li className="flex-item"><a href="/privacidade"><FormattedMessage id="app.footer.link.privacy" /></a></li>
+              <li className="flex-item"><a href="/termos"><FormattedMessage id="app.footer.link.terms" /></a></li>
+            </ul>
           </Col>
         </Row>
       </Container>

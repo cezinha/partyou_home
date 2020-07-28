@@ -3,23 +3,39 @@
 #footer {
   padding: 77px 0 63px;
 
-  h2 {
-    font-weight: 700;
+  h4 {
     margin-bottom: 50px;
   }
 
-  h6 {
+  p {
+    @extend .partyou-darkgrey;
     margin-bottom: 27px;
   }
 
   a {
-    color: $partyou-grey;
-    font-size: 1.13rem;
-    font-weight: 500;
+    @extend .partyou-grey;
+    @extend .size-18;
+    @extend strong;
 
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .flex-item {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .space-between {
+    justify-content: space-between;
   }
 
   .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {
@@ -27,7 +43,7 @@
     border-right-width: 0;
   }
   .btn-lg, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn, #section-1 .btn-group-lg > .btn {
-    padding: 0.9rem 3.5rem;
+    padding: 0.9rem 1.5rem;
   }
 
   ul.redes {
@@ -52,12 +68,17 @@
 
   .footer-last {
     margin-top: 88px;
-    img { height: 40px; }
-    a {
-      font-size: 0.85rem;
-      font-weight: 400;
-      margin: 0 5px;
+    img {
+      height: 40px;
+      margin-top: 3px;
     }
+    a {
+      @extend .partyou-lightgrey-1;
+    }
+  }
+
+  .dropdown {
+    margin-top: 5px;
   }
 }
 
@@ -65,11 +86,24 @@
   #footer {
     padding: 77px 20px 63px;
 
-    h2 {
+    h4 {
       margin-bottom: 30px;
+      text-align: center;
     }
+
     h6 {
       margin-top: 30px;
+    }
+
+    p {
+      margin-top: 20px;
+      padding: 0 15%;
+    }
+
+    ul.redes {
+      float: none;
+      text-align: center;
+      padding: 0;
     }
 
     .input-group-lg > .form-control:not(textarea), #section-1 .input-group-lg > .custom-select {

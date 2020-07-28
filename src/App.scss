@@ -1,1 +1,196 @@
-@import "Partyou";
+@import 'Partyou';
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  color: $partyou-black;
+
+  background: white;
+  background-image: url('/partyou-animado.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+a {
+  color: $partyou-blue;
+}
+
+.bg-light { background-color: white !important;}
+
+.btn-primary {
+  background-color: $partyou-blue;
+  background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+  border-color: transparent;
+}
+
+.btn-secondary {
+  background-color: white;
+  border-color: white;
+  color: $partyou-black;
+  box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  border-color: $partyou-lightblue;
+  box-shadow: 0 0 0 0.15rem rgba(0,220,255, 0.2)
+}
+
+.btn-primary:hover {
+  border-color: $partyou-lightblue;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  border-color: $partyou-blue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $partyou-darkblack;
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 1.1rem 2.3em;
+  font-weight: 600;
+  font-size: 1.13rem;
+}
+
+.App-logo {
+  height: 45px;
+  pointer-events: none;
+  margin-right: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 0 50px;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 3px;
+    height: 3px;
+  }
+  &.active {
+    /* Fallback: Set a background color. */
+    background-color: $partyou-blue;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 3px;
+      height: 3px;
+      background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+      background-color: $partyou-blue;
+    }
+  }
+}
+
+.link-login {
+  margin-right: 59px;
+  color: $partyou-blue;
+  font-size: 1.13rem;
+  font-weight: 500;
+  &:hover {
+    color: $partyou-lightblue;
+    text-decoration: none;
+  }
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 3px;
+    height: 3px;
+  }
+  &.active {
+    /* Fallback: Set a background color. */
+    background-color: $partyou-blue;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 3px;
+      height: 3px;
+      background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
+      background-color: $partyou-blue;
+    }
+  }
+}
+
+.navbar {
+  padding: 1.5rem 3rem 1rem !important;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.3rem 1rem !important
+  }
+
+  .navbar-light .navbar-nav {
+    margin-bottom: 1rem;
+
+    .nav-link {
+      border-bottom: 1px solid rgba(127, 127,127, 0.1);
+      text-align: center;
+    }
+  }
+  .link-login {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  .btn-primary {
+    text-align: center;
+    margin: 20px 0 0;
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+  }
+  .navbar-collapse {
+    padding: 30px;
+    background-color: #fafafa;
+  }
+}
+
+.splash-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: white;
+  background-image: url('/partyou-animado.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page {
+  background: #fff;
+}

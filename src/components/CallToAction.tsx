@@ -15,7 +15,7 @@ class SectionCallToAction extends React.Component {
           <Row>
             <Col sm={0} md={1}></Col>
             <Col sm={12} md={4}>
-              <h1><FormattedMessage id="app.box.call.title" /></h1>
+              <h2><FormattedMessage id="app.box.call.title" /></h2>
               <p><FormattedMessage id="app.box.call.text" /></p>
             </Col>
             <Col sm={0} md={1}></Col>

@@ -1,20 +1,19 @@
 @import "../Partyou";
 
 #download {
+  overflow: hidden;
   background-image: linear-gradient(62deg, $partyou-darkblue, $partyou-lightblue);
 
   .container {
     padding: 85px 0 0;
   }
 
-  h1 {
-    font-weight: 600;
+  h2 {
     color: white;
   }
   h4 {
-    font-size: 1.5rem;
+    @extend .size-22;
     font-weight: 500;
-    color: $partyou-darkgrey;
     margin: 1.5rem 0 50px;
     color: white;
   }
