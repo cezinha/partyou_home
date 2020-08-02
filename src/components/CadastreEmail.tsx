@@ -1,7 +1,9 @@
 import React from 'react';
 import './CadastreEmail.scss';
-import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
+import FormBlock from './FormBlock';
+import { fmt } from '../index';
 
 
 class SectionCadastreEmail extends React.Component {
@@ -18,14 +20,7 @@ class SectionCadastreEmail extends React.Component {
           <Row>
             <Col sm={0} md={4}></Col>
             <Col sm={12} md={5} className="text-center">
-              <form>
-                <InputGroup size="lg">
-                  <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
-                  <Button variant="primary" size="lg">
-                    <FormattedMessage id="app.box.email.button" />
-                  </Button>{' '}
-                </InputGroup>
-              </form>
+              <FormBlock placeholder={fmt({'id': 'app.footer.form.label'})} buttonLabel={fmt({'id': 'app.box.email.button'})} />
             </Col>
           </Row>
         </Container>

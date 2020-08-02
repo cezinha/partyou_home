@@ -1,0 +1,18 @@
+@import '../Partyou';
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker {
+  font-family: inherit;
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+  text-transform: uppercase;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.react-datepicker__day-names .react-datepicker__day-name {
+  font-weight: 500;
+}

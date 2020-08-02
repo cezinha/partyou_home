@@ -105,9 +105,15 @@
   "app.signup.subtitle": "Você está no caminho para ter sua conta Partyou.",
   "app.signup.label.document": "CPF",
   "app.signup.label.name": "Nome",
-  "app.signup.label.birthdate": "Data de Nascimento",
+  "app.signup.label.birth": "Data de Nascimento",
   "app.signup.label.email": "E-mail",
   "app.signup.label.password": "Senha",
   "app.signup.label.button": "Criar conta",
-  "app.signup.label.already": "Já tem uma conta? Faça login"
+  "app.signup.label.sending": "Enviando",
+  "app.signup.label.already": "Já tem uma conta? Faça login",
+  "app.signup.confirm.error": "Ocorreu um erro ao enviar para o servidor: ",
+  "app.signup.confirm.success": "Sua conta foi criada [inserir as instruções para o novo usuário]",
+  "app.form.error.required": "campo obrigatório",
+  "app.form.error.invalidEmail": "E-mail inválido",
+  "app.form.error.invalidDocument": "CPF inválido"
 }

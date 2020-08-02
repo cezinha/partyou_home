@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
 import { fmt } from './index';
 
@@ -20,6 +20,7 @@ import SectionCarousel from './components/Carousel';
 import SectionCallToAction from './components/CallToAction';
 import SectionFunding from './components/Funding';
 import MainNavbar from './components/MainNavbar';
+import FormStart from './components/FormStart';
 
 class Home extends React.Component {
   render() {
@@ -48,12 +49,13 @@ function Section1() {
           <h1><FormattedMessage id="app.home.intro.title" /></h1>
           <p className="size-22 partyou-lightgrey-5"><strong><FormattedMessage id="app.home.intro.subtitle1" /><br />
               <FormattedMessage id="app.home.intro.subtitle2" /></strong></p>
-          <InputGroup size="lg">
+          { /* <InputGroup size="lg">
             <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
             <Button variant="primary" size="lg">
               <FormattedMessage id="app.home.intro.button.label" />
             </Button>{' '}
-          </InputGroup>
+            </InputGroup> */}
+          <FormStart buttonLabel={fmt({id:'app.home.intro.button.label'})} />
           <p className="policy partyou-lightblack-3"><small>
             <FormattedMessage id="app.home.intro.button.obs" />
             <a href="#policy" className="bolder">

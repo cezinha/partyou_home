@@ -1,10 +1,11 @@
 import React from 'react';
 import './Footer.scss';
-import { Container, Row, Col, InputGroup, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Container, Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
 import { fmt } from '..';
 import logo from '../assets/logo.png';
 import ico_redes from '../assets/ico_redes.png';
+import FormBlock from './FormBlock';
 
 class Footer extends React.Component {
   render() {
@@ -38,14 +39,7 @@ class Footer extends React.Component {
         <Row>
           <Col sm={0} md={4}></Col>
           <Col sm={12} md={4} className="text-center">
-            <form>
-              <InputGroup size="lg">
-                <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder={fmt({id: 'app.footer.form.label'})}/>
-                <Button variant="primary" size="lg">
-                  <FormattedMessage id="app.footer.form.button" />
-                </Button>{' '}
-              </InputGroup>
-            </form>
+            <FormBlock placeholder={fmt({'id': 'app.footer.form.label'})} buttonLabel={fmt({'id': 'app.footer.form.button'})} />
           </Col>
         </Row>
         <Row className="footer-last">
